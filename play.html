@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="星宝书,儿童,读物,绘本,电子书" />
+<meta name="description" content="星宝书播放器" />
+<title>星宝书播放器</title>
+<style type="text/css">
+body { margin:0; padding:0; overflow:hidden;margin:auto; }
+/*#flashContent {
+width:100%;
+height:100%;
+}*/
+#loginDiv, #payDiv{
+	width:600px;
+	height:340px;
+	background-color:white;
+	margin:auto;
+	display:none;
+	position:relative;
+}
+.loginpress{
+	background:#FF8406;
+	display:inline-block;
+	padding:5px 25px;
+	font-weight: bolder;
+	border-radius: 5px;
+	cursor: pointer;
+	color:white;
+}
+.loginpress:hover{
+	background:#ffa42e;
+}
+.loginpress:click{
+	background:#FF8406;
+}
+#loginDiv input {
+	border: 1px solid #DBDBDB;
+	height:30px;
+	width:300px;
+	font-size: 16px;
+}
+</style>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/swfobject.js"></script>
+<script>
+	var url = window.location.href;
+	var start = url.indexOf("id") + 3;
+	var id = url.substr(start, 32);
+	start = url.indexOf("type") + 5;
+	var type = url.substr(start, 1);
+	var params = {
+		quality:"autolow",
+		scale:"noscale",
+		loop:"true",
+		wmode:"opaque",
+		menu:"true",
+		devicefont:"false",
+		allowFullScreen:"true",
+		allowScriptAccess:"sameDomain"
+	}
+	swfobject.embedSWF(type + ".swf", "test", $(window).width(), $(window).height(), "9.0.0","expressInstall.swf", {id:id}, params);
+	function resizeWindow(){
+		var W = $(window).width();
+		var H = $(window).height();
+		$("#flashContent").width(W).height(H);
+	}
+	$(document).ready(function(){
+		resizeWindow();
+	});
+	$(window).resize(function(){
+		resizeWindow();
+	});
+</script>
+</head>
+<body>
+	<div id="flashContent" style="position: relative;">
+		<div id="test"></div>
+	</div>
+</body>
+</html>
+

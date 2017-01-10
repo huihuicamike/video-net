@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/video_class.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="images/login2.png">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 _nab_b">
+            <nav class="navbar navbar-default nav-justified">
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse _nav" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li style="padding-top: 14px;display: block;padding-left: 20px"><a href="#" class="_tap" onfocus="this.blur()" style="margin-right:10%"></a></li>
+                        <li><a href="index.html" onfocus="this.blur()">首页<span class="sr-only">(current)</span></a></li>
+                        <li><a href="free_class.html" onfocus="this.blur()">免费视频<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="video_class.html" onfocus="this.blur()">全部视频</a></li>
+                        <li><a href="knownmaster.html" onfocus="this.blur()">名师风采</a></li>
+                        <li><a href="study_center.html" onfocus="this.blur()">直击考试</a></li>
+                        <li><a href="student_works.html" onfocus="this.blur()">学生作品展示</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default" onfocus="this.blur()">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right" style="margin-right:0">
+                        <li><a id="my_login" href="#" onfocus="this.blur()">登录</a></li>
+                        <li><a href="#" onfocus="this.blur()">|</a></li>
+                        <li><a id="my_reginster" href="#" onfocus="this.blur()">注册</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
+    </div>
+    <!--在线视频播放部分开始-->
+    <div class="row">
+        <div class="col-md-12 _middle">
+            <div class="_row">
+            <div class="row" style="width: 900px;margin:auto">
+                <div class="col-md-4 _panel">
+                    <a id="_prev"><div class="_yjt"></div><div class="_tab">今日直播</div></a>
+                    <a id="_first_class"><label>09:40</label><span>-11:10</span><span class="_mark">正在直播</span><br/><span>课程名称</span><br/><span>授课考试</span></a>
+                    <a id="_second_class"><label>09:40</label><span>-11:10</span><span class="_mark" style="display: none">正在直播</span><br/><span>课程名称</span><br/><span>授课考试</span></a>
+                    <a id="_third_class"><label>09:40</label><span>-11:10</span><span class="_mark" style="display: none">正在直播</span><br/><span>课程名称</span><br/><span>授课考试</span></a>
+                    <a id="_bottom_class"><button><img src="images/up.png" class="_up" style="width: 20px;height: 20px"></button><button><img src="images/down.png" class="_down"></button></a>
+                </div>
+                <div class="col-md-8 _video" id="first-class-img">
+                    <img>
+                </div>
+                <div class="col-md-8 _video" id="second-class-img"  style="display: none">
+                    <img>
+                </div>
+                <div class="col-md-8 _video" id="third-class-img" style="display: none">
+                    <img>
+                </div>
+                <a id="click" href="free_class.html">点击收看</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--在线视频播放部分结束-->
+
+    <!--课程分类开始-->
+    <div class="row _box">
+        <div class="col-md-11 _classify">
+
+            <!--课程分类第一行-->
+           <div class="row">
+               <div class="col-md-1">
+                    <label>分类</label>
+                </div>
+               <div class="col-md-11 choice" id="class">
+                    <span>全部<input type="radio" class="hide-radio" name="class" checked="checked"></span><span>直播课程<input type="radio" class="hide-radio" name="class"></span><span>VIP课程<input type="radio" class="hide-radio" name="class"></span><span>视频课程<input type="radio" class="hide-radio" name="class"></span><span>试听课程<input type="radio" class="hide-radio" name="class"></span>
+               </div>
+           </div>
+            <!--第一行结束-->
+            <!--课程分类第二行-->
+            <div class="row">
+                <div class="col-md-1">
+                    <label>名师</label>
+                </div>
+                <div class="col-md-11 choice" id="expert">
+                    <span>全部<input type="radio" class="hide-radio" name="expert" checked="checked"></span><span>何公洲<input type="radio" class="hide-radio" name="expert"></span><span>孟云飞<input type="radio" class="hide-radio" name="expert"></span><span>张站立<input type="radio" class="hide-radio" name="expert"></span><span>王岳飞<input type="radio" class="hide-radio" name="expert"></span><span>李优良<input type="radio" class="hide-radio" name="expert"></span><span>冷万里<input type="radio" class="hide-radio" name="expert"></span><span>赵宏<input type="radio" class="hide-radio" name="expert"></span><span>朱中元<input type="radio" class="hide-radio" name="expert"></span><span>邹方程<input type="radio" class="hide-radio" name="expert"></span><span>李猛<input type="radio" class="hide-radio" name="expert"></span><span>张晓东<input type="radio" class="hide-radio" name="expert"></span><span>杨肖曼<input type="radio" class="hide-radio" name="expert"></span><span>吴江涛<input type="radio" class="hide-radio" name="expert"></span><span>杨冬林<input type="radio" class="hide-radio" name="expert"></span>
+                </div>
+            </div>
+            <!--第二行结束-->
+            <!--课程分类第三行-->
+            <div class="row">
+                <div class="col-md-1">
+                    <label>字体</label>
+                </div>
+                <div class="col-md-11 choice" id="font">
+                    <span>全部<input type="radio" class="hide-radio" name="font" checked="checked"></span><span>隶书<input type="radio" class="hide-radio" name="font"></span><span>篆书<input type="radio" class="hide-radio" name="font"></span><span>草书<input type="radio" class="hide-radio" name="font"></span><span>行书<input type="radio" class="hide-radio" name="font"></span><span>燕书<input type="radio" class="hide-radio" name="font"></span>
+                </div>
+            </div>
+            <!--第三行结束-->
+            <!--课程分类第四行-->
+            <div class="row">
+                <div class="col-md-1">
+                    <label>内容</label>
+                </div>
+                <div class="col-md-11 choice" id="comment">
+                    <span>全部<input type="radio" class="hide-radio" name="comment" checked="checked"></span><span>书法艺术<input type="radio" class="hide-radio" name="comment"></span><span>书法技巧<input type="radio" class="hide-radio" name="comment"></span><span>书法历史<input type="radio" class="hide-radio" name="comment"></span><span>书法创作<input type="radio" class="hide-radio" name="comment"></span>
+                </div>
+            </div>
+            <!--第四行结束-->
+        </div>
+    </div>
+    <!--课程分类结束-->
+
+    <!--直播购买课程开始-->
+    <div class="row" id="change">
+        <div class="_tag">
+                名师   全部
+        </div>
+        <div class="row box-bottom">
+            <div class="width:1200px">
+        <div class="col-md-9 _buy" id="tbc">
+            <!--&lt;!&ndash;第一行开始&ndash;&gt;-->
+            <!--<div class="row _box_class">-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;第一行结束&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;第二行开始&ndash;&gt;&ndash;&gt;-->
+            <!--<div class="row _box_class">-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;&lt;!&ndash;第二行结束&ndash;&gt;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;&lt;!&ndash;第三行开始&ndash;&gt;&ndash;&gt;-->
+            <!--<div class="row _box_class">-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;&lt;!&ndash;第三行结束&ndash;&gt;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;&lt;!&ndash;第四行开始&ndash;&gt;&ndash;&gt;-->
+            <!--<div class="row _box_class">-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label class='class-name'>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-4">-->
+                    <!--<div class="_box_b">-->
+                        <!--<img src="images/video/show.jpg">-->
+                        <!--<div class="hid">-->
+                            <!--<p><label>课程名称：</label><span>大承文化</span></p>-->
+                            <!--<p><label>学习量：</label><span>5000人</span></p>-->
+                            <!--<p><label>收听次数：</label><span>5000次</span></p>-->
+                            <!--<p><label>课程价格：</label><span>￥500.00</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="bottom-course"><label>课程价格：</label><span>￥500.00</span><a>购买</a></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;&lt;!&ndash;第四行结束&ndash;&gt;&ndash;&gt;-->
+
+        </div>
+        <div class="col-md-3 _teacher" id="teacher">
+            <div class="_teacher_border">
+                <label>书法大家谈</label>
+                <div id="_bnt">
+                        <!--<div class="row _teacher_info">-->
+                                <!--<div class="col-md-7 _teacher_img">-->
+                                    <!--<img src="images/person1.jpg">-->
+                                <!--</div>-->
+                                <!--<div class="col-md-4 _teacher_intro">-->
+                                    <!--<div class="_first"><span>姓名:</span><span>学校:</span><span>简介:</span></div>-->
+                                    <!--<div class="_second">-->
+                                        <!--立即收听-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<hr class="_divider"/>-->
+
+                        <!--<div class="row _teacher_info">-->
+                            <!--<div class="col-md-7 _teacher_img">-->
+                                <!--<img src="images/person1.jpg">-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 _teacher_intro">-->
+                                <!--<div class="_first"><span>姓名:</span><span>学校:</span><span>简介:</span></div>-->
+                                <!--<div class="_second">-->
+                                    <!--立即收听-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<hr class="_divider"/>-->
+
+                        <!--<div class="row _teacher_info">-->
+                            <!--<div class="col-md-7 _teacher_img">-->
+                                <!--<img src="images/person1.jpg">-->
+                            <!--</div>-->
+                            <!--<div class="col-md-4 _teacher_intro">-->
+                                <!--<div class="_first"><span>姓名:</span><span>学校:</span><span>简介:</span></div>-->
+                                <!--<div class="_second">-->
+                                    <!--立即收听-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                 </div>
+            </div>
+
+            <div class="_teacher_border" id="related">
+                <label>相关课程</label>
+                <div id="rlt_class">
+                    <!--<div>-->
+                        <!--<div class="row _teacher_info">-->
+                            <!--<div class="col-md-7 _teacher_img">-->
+                            <!--<img src="images/lengwanli.jpg">-->
+                            <!--</div>-->
+                        <!--<div class="col-md-4 _teacher_intro">-->
+                        <!--<div class="_first"><span>姓名:</span><span>学校:</span><span>简介:</span></div>-->
+                            <!--<div class="_second">-->
+                            <!--立即收听-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                        <!--<hr class="_divider"/>-->
+
+                        <!--<div class="row _teacher_info">-->
+                        <!--<div class="col-md-7 _teacher_img">-->
+                        <!--<img src="images/lengwanli.jpg">-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4 _teacher_intro">-->
+                        <!--<div class="_first"><span>姓名:</span><span>学校:</span><span>简介:</span></div>-->
+                        <!--<div class="_second">-->
+                        <!--立即收听-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+    <div class="row footer">
+        <div class="col-md-12" id="page">
+            <nav>
+                <ul class="pagination" id="pagination">
+                    <!--<li class="disabled"><a  aria-label="Previous">上一页</a></li>-->
+                    <!--<li class="active"><a>1</a></li>-->
+                    <!--<li ><a >... </a></li>-->
+                    <!--<li ><a>6</a></li>-->
+                    <!--<li ><a >7</a></li>-->
+                    <!--<li ><a >8</a></li>-->
+                    <!--<li ><a >9</a></li>-->
+                    <!--<li ><a >10</a></li>-->
+                    <!--<li ><a >... </a></li>-->
+                    <!--<li ><a >100</a></li>-->
+                    <!--<li ><a >下一页</a></li>-->
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+    <!--直播购买课程结束-->
+
+</div>
+
+
+
+<!--以下是登录页面和注册页面-->
+<!--遮罩层-->
+<div class="sft" style="display: none">
+</div>
+<!--遮罩层结束-->
+
+<div class="container registerlogin" style="display: none">
+    <div class="_login_info">
+        <!--头部信息-->
+        <div class="_login_head">
+            <p>注册立即可享</p>
+            <p>大成文化名师在线课程免费</p>
+            <p>试听资格</p>
+        </div>
+        <!--头部结束-->
+        <div class="_login_label">
+            <label id="reginster">注册</label><label id="login">登录</label>
+        </div>
+
+        <!--注册-->
+        <div class="_b_box " >
+            <div class="_m_box">
+                <form>
+                    <table class="_login_personal">
+                        <tbody>
+                        <tr><th>手机号</th><td><input id="number" placeholder="请输入手机号"></td></tr>
+                        <tr><th>验证码</th><td><input id="check_num" placeholder="请输入验证码"><input id="get_check_num" type="button" value="获取验证码"></td></tr>
+                        <tr><th>密码</th><td><input id="password" placeholder="请输入密码"></td></tr>
+                        <tr><th></th><td><input type="checkbox" id="check" ><label>同意《网络协议》</label></td></tr>
+                        <tr><td><buttom type="submit" id="_submit_login">注册</buttom></td></tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="after_login">注册成功，可获得更多试听机会</div>
+                <div class="other_login">其他登录方式 <a><img id="qq_img" src="images/qq.png"></a><a><img src="images/weixin.png"></a><a><img src="images/xinlang.png"></a></div>
+            </div>
+        </div>
+
+        <!--登录-->
+        <div class="_b2_box" style="display: none">
+            <form>
+                <table class="_login_personal">
+                    <tbody>
+                    <tr><th>手机号</th><td><input  placeholder="请输入手机号" id="phone"></td></tr>
+                    <tr><th>密码</th><td><input  placeholder="请输入密码" id="_pass"></td></tr>
+                    <tr><th></th><td><input type="checkbox" id="_check" ><label>同意《网络协议》</label></td></tr>
+                    <tr><td><buttom type="submit" id="_login">登录</buttom></td></tr>
+                    </tbody>
+                </table>
+            </form>
+            <div class="other_login">其他登录方式 <a><img id="qq2_img" src="images/qq.png"></a><a><img src="images/weixin.png"></a><a><img src="images/xinlang.png"></a></div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/video_class.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

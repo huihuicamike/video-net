@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="shortcut icon" href="images/login2.png">
+</head>
+<body>
+<div class="box">
+    <div class="table-responsive">
+        <table class="table">
+            <tbody>
+                <!--订单详情-->
+                <tr class=" item-bg corner edge title"><td class="tip left-space">订单详情</td></tr>
+                <!--<div class="item-bg edge lab side-both choice up-down-space"><label>您尚未完成订单：</label><a class="corner">去付款</a><a class="corner">返回修改订单</a></div>-->
+
+                <tr class="item-bg edge lab side-both choice up-down-space state">
+                    <td class="tip">您尚未完成订单：</td>
+                    <td><a class="corner">去付款</a></td>
+                    <td><a class="corner">返回修改订单</a></td>
+                </tr>
+
+                <tr class="item-bg edge lab side-both important-info">
+                    <td class="tip"  style="padding-top:5px !important;">订单编号：<span></span></td>
+                    <td>下单日期：<span></span></td>
+                    <td>订单状态：<span>未付款</span></td>
+                </tr>
+
+                <!--购买商品-->
+                <tr class="item-bg  corner edge choice title"><td class="tip left-space">购买商品</td></tr>
+                <tr class=" lab side-both order-info choice type first-line" ><td>商品名称</td><td>子订单编号</td><td>价格</td><td>数量</td><td>订单状态</td><td>快递单号</td><td>备注</td></tr>
+                <tr class=" lab side-both order-info type" id="skill"><td>书法技巧</td><td><input type="text"></td><td><input type="text" ></td><td><input type="text"></td><td><input type="text" ></td><td><input type="text" ></td><td><input type="text"></td></tr>
+
+                <!--收货人信息-->
+                <tr class="item-bg  corner edge choice title recive-info"><td class="tip left-space">收货人信息</td></tr>
+                <tr class=" lab side-both area choice type first-line detail-info"><td>收货人姓名：</td><td><input type="text"></td><td>配送地区：</td><td><input type="text"></td></tr>
+                <tr class=" lab side-both phone type detail-info"><td>联系电话：</td><td><input type="text"></td><td>收件人邮编：</td><td><input type="text"></td></tr>
+                <tr class=" lab side-both method type detail-info"><td>配送方式：</td><td><input type="text"></td><td>付款方式：</td><td><input type="text"></td></tr>
+                <tr class=" lab side-both addr type detail-info"><td>收货人地址：</td><td><input type="text"></td></tr>
+                <tr class=" lab side-both remark type detail-info"><td>备注：</td><td><textarea type="text"></textarea></td></tr>
+
+                <!--费用总计-->
+                <tr class="item-bg  corner edge choice title"><td class="tip left-space">费用总计</td></tr>
+                <tr class=" lab side-both choice type first-line all-cost"><td>商品总金额：</td><td></td></tr>
+                <tr class=" lab side-both type detail-info all-cost"><td>配送费用：</td><td></td></tr>
+                <tr class=" lab side-both type detail-info all-cost"><td>订单总金额：</td><td></td></tr>
+                <tr class=" lab side-both type detail-info all-cost choice"><td>您尚未完成订单：</td><td><a class="corner">去付款</a></td></tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/order.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

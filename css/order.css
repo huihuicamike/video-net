@@ -1,0 +1,138 @@
+*{
+    font-size: 14px;
+}
+a{
+    text-decoration: none !important;
+    cursor:pointer !important;
+}
+.box{
+    padding:50px 20%;
+}
+.lab{
+    display: block;
+    padding: 0 10px;
+}
+.item-bg{
+    background-color: white;
+}
+.corner{
+    border-radius: 5px;
+}
+.edge{
+    border: 1px solid gainsboro;
+}
+.side-both{
+    margin-left: 10px;
+    margin-right:10px;
+}
+.up-down-space{
+    margin-bottom: 10px;
+    margin-top:0px;
+}
+.choice{
+    margin-top: 15px;
+}
+.choice a{
+    display: inline-block;
+    padding: 4px 10%;
+    background-color:gainsboro;
+    margin: -.4% 5%;
+    font-size: 14px;
+}
+td{
+    border-top: none !important;
+}
+.state td{
+    width: 30%;
+}
+.important-info td:nth-child(1){
+    width:50% ;
+}
+.important-info td:nth-child(2),.important-info td:nth-child(3){
+    width: 24%;
+}
+.important-info td:nth-child(2){
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+tr{
+    width: auto !important;
+}
+.title,.title td{
+    padding:0 !important;
+    padding-left: 5px;
+}
+.order-info td:nth-child(1){
+    width: 15%;
+}
+.order-info td:nth-child(2){
+    width: 20%;
+}
+.order-info td:nth-child(3),.order-info td:nth-child(4),.order-info td:nth-child(5){
+    width: 10%;
+}
+.order-info td:nth-child(6){
+    width: 20%;
+}
+.order-info td:nth-child(7){
+    width: 15%;
+}
+.order-info td{
+    text-align: center;
+    border-right: 1px solid gainsboro;
+}
+.order-info td:first-child,.detail-info td:first-child{
+    border-left:1px solid gainsboro !important;
+}
+.type td{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-left: none !important;
+    padding:5px 10px
+}
+.first-line td{
+    border-top:1px solid gainsboro !important;
+}
+.area td:nth-child(1),.area td:nth-child(2){
+    width: 15%;
+}
+.phone td:nth-child(1),.phone td:nth-child(2),.phone td:nth-child(3),.phone td:nth-child(4),.method td:nth-child(1),.method td:nth-child(2),.method td:nth-child(3),.method td:nth-child(4){
+    width: 25%;
+}
+.area td:nth-child(3){
+    width: 15%;
+}
+.area td:nth-child(4){
+    width: 55%;
+}
+.addr td:nth-child(1){
+    width: 15%;
+}
+.addr td:nth-child(2){
+    width: 85%;
+}
+td input,td textarea{
+    width: 100%;
+    border: medium none;
+}
+.remark{
+
+}
+.remark td:nth-child(1){
+    width: 10%;
+}
+.remark td:nth-child(2){
+    width: 90%;
+}
+.all-cost td:nth-child(1){
+    width: 30%;
+}
+.all-cost td:nth-child(2){
+    width: 70%;
+}
+.tip{
+    margin-top:.3%;
+}
+.left-space{
+    margin-left:1%
+}

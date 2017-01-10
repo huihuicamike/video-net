@@ -1,0 +1,13 @@
+.title{
+    text-align: center;
+}
+.box{
+    padding: 3%;
+}
+.question p{
+    padding-left: 2%;
+}
+input[type="submit"]{
+    margin: auto;
+    display: block;
+}

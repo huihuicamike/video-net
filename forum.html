@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/forum.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="images/login2.png">
+</head>
+<body>
+<div class="container">
+    <div class="row" >
+        <div class="col-md-6 _nab_b" style="padding-left: 0">
+            <nav class="navbar navbar-default nav-justified">
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse _nav" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li style="padding-top: 14px;display: block;padding-left: 20px"><a href="#" class="_tap" onfocus="this.blur()" style="margin-right:10%"></a></li>
+                        <li><a href="index.html" onfocus="this.blur()">首页<span class="sr-only">(current)</span></a></li>
+                        <li  class="active"><a  onfocus="this.blur()">论坛社区<span class="sr-only">(current)</span></a></li>
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+        <div class="col-md-6" style="padding-left: 0">
+            <div class="navbar navbar-default nav-justified">
+                <div class="collapse navbar-collapse" style="padding-left: 0">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a><img src="images/qq.png">qq账号登陆</a></li>
+                        <li><a><img src="images/weixin.png">qq账号登陆</a></li>
+                        <!--<li><a>微信账号登陆</a></li>-->
+                        <li><a><img src="images/xinlang.png">新浪账号登陆</a></li>
+                        <li><a href="#" id="my_login" onfocus="this.blur()">登录</a></li>
+                        <li><a href="#" onfocus="this.blur()">|</a></li>
+                        <li><a href="#" id="my_reginster" onfocus="this.blur()">注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <nav class="navbar navbar-default forum_nav">
+                <div class="container-fluid">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" onfocus="this.blur();">论坛首页<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#" onfocus="this.blur();">|</a></li>
+                            <li><a href="#" onfocus="this.blur();">最新帖子</a></li>
+                            <li><a href="#" onfocus="this.blur()">|</a></li>
+                            <li><a href="#" onfocus="this.blur();">家长讨论区</a></li>
+                            <li><a href="#" onfocus="this.blur()">|</a></li>
+                            <li><a href="#" onfocus="this.blur();">书法技巧讨论区</a></li>
+                            <li><a href="#" onfocus="this.blur()">|</a></li>
+                            <li><a href="#" onfocus="this.blur()">书法创作讨论区</a></li>
+                        </ul>
+                        <form class="navbar-form search" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+
+    <div class="row forum-tap bot_blank">
+        <div class="col-md-1 tap_left notice">
+            快速发帖
+        </div>
+        <div class="col-md-4 col-md-offset-5  bot_blank">
+            <div><label>今日</label><span>100</span></div>
+            <div><label>主题</label><span>100</span></div>
+            <div><label>帖子</label><span>100</span></div>
+            <div><label>会员</label><span>100</span></div>
+        </div>
+
+        <div class="row notice">
+            <div class="col-md-4 " style="padding-left: 0">
+                <div class="character bot_blank bg_color bor">公告栏</div>
+            </div>
+            <div class="col-md-8 " style="padding: 0">
+                <div class="character bot_blank bg_color bor">一周热帖</div>
+            </div>
+        </div>
+        <div class="row notice">
+            <div class="col-md-4" style="padding-left: 0">
+                <img class="_notice " src="images/notice.jpg">
+            </div>
+            <div class="col-md-8 info news">
+                <p >晒礼物，我的抱枕也来了<span>刺猬橙橙</span></p>
+                <p >晒春天，景山的牡丹正在开<span>阳光米奇</span></p>
+                <p>一则寓言故事道出家庭教育的真谛<span>北京的秋</span></p>
+                <p >晒礼物，我的抱枕也来了<span>刺猬橙橙</span></p>
+                <p >晒春天，景山的牡丹正在开<span>阳光米奇</span></p>
+                <p>一则寓言故事道出家庭教育的真谛<span>北京的秋</span></p>
+                <p >晒礼物，我的抱枕也来了<span>刺猬橙橙</span></p>
+                <p >晒春天，景山的牡丹正在开<span>阳光米奇</span></p>
+                <p>一则寓言故事道出家庭教育的真谛<span>北京的秋</span></p>
+                <p>一则寓言故事道出家庭教育的真谛<span>北京的秋</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!--书法技巧讨论区-->
+    <div class="row bot_blank">
+        <div class="col-md-11 bg_color bor notice skill character" style="width: 88%">书法技巧的讨论区<img src="images/toggle-expand-alt.png" id="moreSkillDynamic"></div>
+    </div>
+
+    <div class="row box bor bot_blank">
+        <div class="row  bg_color">
+
+                <div class="col-md-6 bor">
+                    <p><img class="skill_icon" src="images/ask.png"><label>初中互动专区</label><spam>(43)</spam></p>
+                    <p><label>版主：</label><span>huihui,壮壮妈妈，一沙，轻舞飞扬037</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>专家：</label><span>满小星，静楠老师</span></p>
+                    <p><label>主题：</label><span>3714</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>帖子：</label><span>6万</span></p>
+                </div>
+                <div class="col-md-6 bor">
+                    <p><img class="skill_icon" src="images/ask.png"><label>高中互动专区</label><spam>(43)</spam></p>
+                    <p><label>版主：</label><span>huihui,壮壮妈妈，一沙，轻舞飞扬037</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>专家：</label><span>满小星，静楠老师</span></p>
+                    <p><label>主题：</label><span>3714</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>帖子：</label><span>6万</span></p>
+                </div>
+        </div>
+        <hr style="margin:0;display: none" >
+        <div class="row bg_color" id="hide1" style="display: none">
+            <div class="col-md-6 bor">
+                <p><img class="skill_icon" src="images/ask.png"><label>初中互动专区</label><spam>(43)</spam></p>
+                <p><label>版主：</label><span>huihui,壮壮妈妈，一沙，轻舞飞扬037</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>专家：</label><span>满小星，静楠老师</span></p>
+                <p><label>主题：</label><span>3714</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>帖子：</label><span>6万</span></p>
+            </div>
+            <div class="col-md-6 bor">
+                <p><img class="skill_icon" src="images/ask.png"><label>高中互动专区</label><spam>(43)</spam></p>
+                <p><label>版主：</label><span>huihui,壮壮妈妈，一沙，轻舞飞扬037</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>专家：</label><span>满小星，静楠老师</span></p>
+                <p><label>主题：</label><span>3714</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>帖子：</label><span>6万</span><a class="more">更多</a></p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--书法创作讨论区-->
+    <div class="row bot_blank bot_blank">
+        <div class="col-md-11 bg_color bor notice skill character" style="width: 88%">书法创作的讨论区<img src="images/toggle-collapse.png" id="moreProduceDynamic"></div>
+    </div>
+    <div class="row box bor bot_blank">
+        <div class="row  bg_color">
+
+            <div class="col-md-6 bor">
+                <p><img class="skill_icon" src="images/ask.png"><label>初中互动专区</label><spam>(43)</spam></p>
+                <p><label>版主：</label><span>huihui,壮壮妈妈，一沙，轻舞飞扬037</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>专家：</label><span>满小星，静楠老师</span></p>
+                <p><label>主题：</label><span>3714</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>帖子：</label><span>6万</span></p>
+            </div>
+            <div class="col-md-6 bor">
+                <p><img class="skill_icon" src="images/ask.png"><label>高中互动专区</label><spam>(43)</spam></p>
+                <p><label>版主：</label><span>huihui,壮壮妈妈，一沙，轻舞飞扬037</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>专家：</label><span>满小星，静楠老师</span></p>
+                <p><label>主题：</label><span>3714</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>帖子：</label><span>6万</span></p>
+            </div>
+        </div>
+        <hr style="margin:0;display: none" >
+        <div class="row bg_color" id="hide2" style="display: none">
+            <div class="col-md-6 bor">
+                <p><img class="skill_icon" src="images/ask.png"><label>初中互动专区</label><spam>(43)</spam></p>
+                <p><label>版主：</label><span>huihui,壮壮妈妈，一沙，轻舞飞扬037</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>专家：</label><span>满小星，静楠老师</span></p>
+                <p><label>主题：</label><span>3714</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>帖子：</label><span>6万</span></p>
+            </div>
+            <div class="col-md-6 bor">
+                <p><img class="skill_icon" src="images/ask.png"><label>高中互动专区</label><spam>(43)</spam></p>
+                <p><label>版主：</label><span>huihui,壮壮妈妈，一沙，轻舞飞扬037</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>专家：</label><span>满小星，静楠老师</span></p>
+                <p><label>主题：</label><span>3714</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>帖子：</label><span>6万</span><a class="more">更多</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--在线答疑-->
+    <div class="row bot_blank bot_blank">
+        <div class="col-md-11 bg_color bor notice skill character" style="width: 88%">在线答疑</div>
+    </div>
+
+    <div class="box bg_color bot_blank">
+        <div class="media bor">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://tp4.sinaimg.cn/1167075935/50/22838101204/1" alt="...">
+            </a>
+            <div class="media-body">
+                <h5 class="media-heading"><label>huihui：</label><span>小于老师讲的很好，听课后受益匪浅，学到了好多知识。</span><span class="notice">2016-6-10  23:10</span><a class="reply">回复</a></h5>
+                <div><label>问题来源：</label><span>健康管理师必须课之一</span></div>
+            </div>
+        </div>
+        <hr style="margin:0;border:1px dashed gainsboro" >
+        <div class="media bor">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://tp4.sinaimg.cn/1167075935/50/22838101204/1" alt="...">
+            </a>
+            <div class="media-body">
+                <h5 class="media-heading"><label>huihui：</label><span>小于老师讲的很好，听课后受益匪浅，学到了好多知识。</span><span class="notice">2016-6-10  23:10</span><a class="reply">回复</a></h5>
+                <div><label>问题来源：</label><span>健康管理师必须课之一</span></div>
+            </div>
+        </div>
+        <hr style="margin:0;border:1px dashed gainsboro" >
+        <div class="media bor">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://tp4.sinaimg.cn/1167075935/50/22838101204/1" alt="...">
+            </a>
+            <div class="media-body">
+                <h5 class="media-heading"><label>huihui：</label><span>小于老师讲的很好，听课后受益匪浅，学到了好多知识。</span><span class="notice">2016-6-10  23:10</span><a class="reply">回复</a></h5>
+                <div><label>问题来源：</label><span>健康管理师必须课之一</span></div>
+            </div>
+        </div>
+        <hr style="margin:0;border:1px dashed gainsboro" >
+        <div class="media bor">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://tp4.sinaimg.cn/1167075935/50/22838101204/1" alt="...">
+            </a>
+            <div class="media-body">
+                <h5 class="media-heading"><label>huihui：</label><span>小于老师讲的很好，听课后受益匪浅，学到了好多知识。</span><span class="notice">2016-6-10  23:10</span><a class="reply">回复</a></h5>
+                <div><label>问题来源：</label><span>健康管理师必须课之一</span></div>
+            </div>
+        </div>
+        <hr style="margin:0;border:1px dashed gainsboro" >
+        <div class="media bor">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://tp4.sinaimg.cn/1167075935/50/22838101204/1" alt="...">
+            </a>
+            <div class="media-body">
+                <h5 class="media-heading"><label>huihui：</label><span>小于老师讲的很好，听课后受益匪浅，学到了好多知识。</span><span class="notice">2016-6-10  23:10</span><a class="reply">回复</a></h5>
+                <div><label>问题来源：</label><span>健康管理师必须课之一</span></div>
+            </div>
+        </div>
+        <hr style="margin:0;border:1px dashed gainsboro" >
+        <div class="media bor">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://tp4.sinaimg.cn/1167075935/50/22838101204/1" alt="...">
+            </a>
+            <div class="media-body">
+                <h5 class="media-heading"><label>huihui：</label><span>小于老师讲的很好，听课后受益匪浅，学到了好多知识。</span><span class="notice">2016-6-10  23:10</span><a class="reply">回复</a></h5>
+                <div><label>问题来源：</label><span>健康管理师必须课之一</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部分页栏-->
+    <div class="row">
+        <div class="col-md-7 col-md-offset-5" id="page">
+            <nav>
+                <ul class="pagination" id="pagination">
+                    <li class="disabled"><a  aria-label="Previous">上一页</a></li>
+                    <li class="active"><a>1</a></li>
+                    <li ><a >... </a></li>
+                    <li ><a>6</a></li>
+                    <li ><a >7</a></li>
+                    <li ><a >8</a></li>
+                    <li ><a >9</a></li>
+                    <li ><a >10</a></li>
+                    <li ><a >... </a></li>
+                    <li ><a >100</a></li>
+                    <li ><a >下一页</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</div>
+
+<!--以下是登录页面和注册页面-->
+<!--遮罩层-->
+<div class="sft" style="display: none">
+</div>
+<!--遮罩层结束-->
+
+<div class="container registerlogin" style="display: none">
+    <div class="_login_info">
+        <!--头部信息-->
+        <div class="_login_head">
+            <p>注册立即可享</p>
+            <p>大成文化名师在线课程免费</p>
+            <p>试听资格</p>
+        </div>
+        <!--头部结束-->
+        <div class="_login_label">
+            <label id="reginster">注册</label><label id="login">登录</label>
+        </div>
+
+        <!--注册-->
+        <div class="_b_box " >
+            <div class="_m_box">
+                <form>
+                    <table class="_login_personal">
+                        <tbody>
+                        <tr><th>手机号</th><td><input id="number" placeholder="请输入手机号"></td></tr>
+                        <tr><th>验证码</th><td><input id="check_num" placeholder="请输入验证码"><input id="get_check_num" type="button" value="获取验证码"></td></tr>
+                        <tr><th>密码</th><td><input id="password" placeholder="请输入密码"></td></tr>
+                        <tr><th></th><td><input type="checkbox" id="check" ><label>同意《网络协议》</label></td></tr>
+                        <tr><td><buttom type="submit" id="_submit_login">注册</buttom></td></tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="after_login">注册成功，可获得更多试听机会</div>
+                <div class="other_login">其他登录方式 <a><img id="qq_img" src="images/qq.png"></a><a><img src="images/weixin.png"></a><a><img src="images/xinlang.png"></a></div>
+            </div>
+        </div>
+
+        <!--登录-->
+        <div class="_b2_box" style="display: none">
+            <form>
+                <table class="_login_personal">
+                    <tbody>
+                    <tr><th>手机号</th><td><input  placeholder="请输入手机号" id="phone"></td></tr>
+                    <tr><th>密码</th><td><input  placeholder="请输入密码" id="_pass"></td></tr>
+                    <tr><th></th><td><input type="checkbox" id="_check" ><label>同意《网络协议》</label></td></tr>
+                    <tr><td><buttom type="submit" id="_login">登录</buttom></td></tr>
+                    </tbody>
+                </table>
+            </form>
+            <div class="other_login">其他登录方式 <a><img id="qq2_img" src="images/qq.png"></a><a><img src="images/weixin.png"></a><a><img src="images/xinlang.png"></a></div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/forum.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

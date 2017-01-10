@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height: auto;
+    background-color:#f5f4f2;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.row{
+    margin-right: 0;
+}
+._nav{
+    background-color: #E5DCCD !important;
+}
+._nab_b{
+    background-color: #e7e7e7 !important;
+}
+._nab_b .navbar{
+    margin-bottom: 0 !important;
+}
+
+._tap{
+    background-image: url(../images/login.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 130px;
+    /*height: 40px*/
+}
+hr{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.navbar-nav > li > a{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+._login,._register{
+    display: inline-block;
+    padding-top: 25%;
+    margin-left: 1%;
+}
+.gao_title,.zhong_title,.gao_title2,.zhong_title2{
+    display: block;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+._shift{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*中高考模拟试题图片*/
+.gao_title{
+
+    background-image: url(../images/study_center/bannermiddletest-0.jpg);
+}
+.gao_title2{
+
+    background-image: url(../images/study_center/bannermiddletest-1.jpg);
+}
+.zhong_title{
+    background-image: url(../images/study_center/bannergaotest-0.jpg);
+
+}
+.zhong_title2{
+    background-image: url(../images/study_center/bannergaotest-1.jpg);
+
+}
+._senior,._high{
+    padding: 0 !important;
+    position: relative;
+}
+._background1{
+    background-color: orange;
+    height: 400px;
+}
+._background2{
+    background-color: #39b3d7;
+    height: 400px;
+}
+._senior ._first_t,._high ._first_t{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 200;
+}
+._more{
+    padding: 1% 10%;
+    background-color: #e7e7e7;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+._more_info{
+    display: inline-block;
+    float: right;
+    padding: .1em 1em;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.box-bottom{
+    margin-bottom: 5em !important;
+}
+
+/**/

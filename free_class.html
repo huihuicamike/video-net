@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/free_class.css">
+    <link rel="shortcut icon" href="images/login2.png">
+    <link href="froala_editor/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="froala_editor/css/froala_editor.min.css" rel="stylesheet" type="text/css">
+    <script src="froala_editor/js/libs/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row" >
+        <div class="col-md-12 _nab_b">
+            <nav class="navbar navbar-default nav-justified">
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse _nav" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li style="padding-top: 14px;display: block;padding-left: 20px"><a href="#" class="_tap" onfocus="this.blur()" style="margin-right:10%"></a></li>
+                        <li><a href="index.html" onfocus="this.blur()">首页<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="free_class.html" onfocus="this.blur()">免费视频<span class="sr-only">(current)</span></a></li>
+                        <li><a href="video_class.html" onfocus="this.blur()">全部视频</a></li>
+                        <li><a href="knownmaster.html" onfocus="this.blur()">名师风采</a></li>
+                        <li><a href="study_center.html" onfocus="this.blur()">直击考试</a></li>
+                        <li><a href="student_works.html" onfocus="this.blur()">学生作品展示</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default" onfocus="this.blur()">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right" style="margin-right:0">
+                        <li><a id="my_login" onfocus="this.blur()">登录</a></li>
+                        <li><a href="#" onfocus="this.blur()">|</a></li>
+                        <li><a id="my_reginster" href="#" onfocus="this.blur()">注册</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
+    </div>
+
+    <div class="tab">当前位置：<span>首页</span>&gt;<span>免费视频</span>&gt;<p>为什么在普通人眼中分文不值得书法作品在大师眼中却是精品</p></div>
+    <p class="box" id="video-name"><span>...</span><span>...</span><span>...</span></p>
+
+    <div class="row head">
+
+            <!--播放器-->
+            <div id="player" class="col-md-5">
+                <script type="text/javascript" src="sewise/util/sewise.player.min.js"></script>
+                <script type="text/javascript">
+                    //                            SewisePlayer.setup({
+                    //                                server: "vod",
+                    //                                type: "mp4",
+                    //                                //url: "http://jackzhang1204.github.io/materials/mov_bbb.mp4",
+                    //                                skin: "liveOrange",//vodFoream，liveOrange,liveRadio,liveWhite,vodFlowPlayer,vodFoream,vodMobileTransparent,vodMobileWhite,vodOrange,vodTransparent,vodWhite
+                    //                                lang: 'zh_CN'
+                    //                            }, "player");
+                    //                            SewisePlayer.toPlay("http://139.129.200.57/video/huihui.mp4", "测试视频", 0, true);
+                </script>
+                <div class="comment"><textarea placeholder="请输入您的评论。。。" id="my_comment"></textarea><button id="submit">发表评论</button></div>.
+            </div>
+
+
+            <div class="divid"></div>
+
+            <div id="lab" style="display: none">
+                <div id="inner_lab">
+                    <img src="images/free_class/god.png" id="warm">
+                    <div>
+                        <p>尊敬的用户：</p>
+                        <p style="margin-bottom:20px">试看已结束，登陆后观看完整版本视频</p>
+                        <a id="video_register">注册</a><a id="video_login">登陆</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 active" id="list">
+                <div class="row" style="margin-bottom:2%">
+                    <div class="col-md-6 active" id="column-new">播放列表</div>
+                    <div class="col-md-6 un-active" id="column-old">往期节目</div>
+                </div>
+
+                <!--第一页视频链表-->
+                <div class="row details-list">
+                    <div class="col-md-5">
+                        <img  class="navgi">
+                    </div>
+                    <div class="col-md-7 class-info">
+                        <p>
+                            <label class="video-version">完整版</label>：<span class="video-date">第一期</span>：<span class="video-title">为什么普通人眼中分文不值的书法作品，在书法大家眼中却是精品</span>
+                        </p>
+                        <p><label>播放：</label><span>60万次</span></p>
+                        <p><label>标签：</label><span>何公洲   王嘉宾</span></p>
+                    </div>
+                </div>
+                <div class="row details-list">
+                    <div class="col-md-5">
+                        <img >
+                    </div>
+                    <div class="col-md-7 class-info">
+                        <p>
+                            <label class="video-version">完整版</label>：<span class="video-date">第一期</span>：<span class="video-title">为什么普通人眼中分文不值的书法作品，在书法大家眼中却是精品</span>
+                        </p>
+                        <p><label>播放：</label><span>60万次</span></p>
+                        <p><label>标签：</label><span>何公洲   王嘉宾</span></p>
+                    </div>
+                </div>
+                <div class="row details-list">
+                    <div class="col-md-5">
+                        <img>
+                    </div>
+                    <div class="col-md-7 class-info">
+                        <p>
+                            <label class="video-version">完整版</label>：<span class="video-date">第一期</span>：<span class="video-title">为什么普通人眼中分文不值的书法作品，在书法大家眼中却是精品</span>
+                        </p>
+                        <p><label>播放：</label><span>60万次</span></p>
+                        <p><label>标签：</label><span>何公洲   王嘉宾</span></p>
+                    </div>
+                </div>
+
+                <!--第二页视频链表-->
+                <div class="row details-list" style="display: none">
+                    <div class="col-md-5">
+                        <img>
+                    </div>
+                    <div class="col-md-7 class-info">
+                        <p>
+                            <label class="video-version">完整版</label>：<span class="video-date">第一期</span>：<span class="video-title">为什么普通人眼中分文不值的书法作品，在书法大家眼中却是精品</span>
+                        </p>
+                        <p><label>播放：</label><span>60万次</span></p>
+                        <p><label>标签：</label><span>何公洲   王嘉宾</span></p>
+                    </div>
+                </div>
+                <div class="row details-list" style="display: none">
+                    <div class="col-md-5">
+                        <img >
+                    </div>
+                    <div class="col-md-7 class-info">
+                        <p>
+                            <label class="video-version">完整版</label>：<span class="video-date">第一期</span>：<span class="video-title">为什么普通人眼中分文不值的书法作品，在书法大家眼中却是精品</span>
+                        </p>
+                        <p><label>播放：</label><span>60万次</span></p>
+                        <p><label>标签：</label><span>何公洲   王嘉宾</span></p>
+                    </div>
+                </div>
+                <div class="row details-list" style="display: none">
+                    <div class="col-md-5">
+                        <img>
+                    </div>
+                    <div class="col-md-7 class-info">
+                        <p>
+                            <label class="video-version">完整版</label>：<span class="video-date">第一期</span>：<span class="video-title">为什么普通人眼中分文不值的书法作品，在书法大家眼中却是精品</span>
+                        </p>
+                        <p><label>播放：</label><span>60万次</span></p>
+                        <p><label>标签：</label><span>何公洲   王嘉宾</span></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <!--三幅图片-->
+    <div class="row propagate top-space bottom-space">
+        <div class="col-md-3 col-md-offset-1" style="margin-left: 12%">
+            <img src="images/free_class/u143.png">
+            <a href="Personal_Tailor.html">书法名家作品私人订制</a>
+        </div>
+        <div class="col-md-3">
+            <img src="images/free_class/u145.png">
+            <a href="guidance.html">名师指导</a>
+        </div>
+        <div class="col-md-3">
+            <img src="images/free_class/u147.jpg">
+            <a>书法名家作品私人订制</a>
+        </div>
+    </div>
+
+    <!--节目列表部分-->
+    <div class="tab">节目列表</div>
+
+    <div id="recommend_video">
+        <!--第一行-->
+        <!--<div class="row box list">-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span class='info-date'>第一期：</span>-->
+                        <!--<span class='info-title'>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span>第一期：</span>-->
+                        <!--<span>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span>第一期：</span>-->
+                        <!--<span>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span>第一期：</span>-->
+                        <!--<span>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span>第一期：</span>-->
+                        <!--<span>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--第二行-->
+        <!--<div class="row box list">-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span>第一期：</span>-->
+                        <!--<span>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span>第一期：</span>-->
+                        <!--<span>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span>第一期：</span>-->
+                        <!--<span>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span>第一期：</span>-->
+                        <!--<span>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="col-md-2">-->
+                <!--<a class='other-video'>-->
+                    <!--<img src="images/work-order/576376520001da3d05400300-228-128.jpg%2522.jpg">-->
+                    <!--<div class="info">-->
+                        <!--<label> 片段：</label>-->
+                        <!--<span>第一期：</span>-->
+                        <!--<span>在书法大家眼中却是精品</span>-->
+                        <!--<div class="shadow" style="display: none">-->
+                            <!--<div><label style="margin-top:5px">标签：</label><span>何公洲  张站立</span></div>-->
+                            <!--<div><label>次数：</label><span>6000次</span></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <!--书法名家作品展示-->
+    <div class="tab work-show bottom-space">书法名家作品展示<a href="Personal_Tailor.html">更多作品展示</a></div>
+
+    <!--第一行-->
+    <div id="works_show">
+        <!--<div class="row box show bottom-space top-space">-->
+            <!--<div class="col-md-3">-->
+                <!--<img src="images/free_class/u119.png.jpg">-->
+                <!--<div class="hid" style="display: none">-->
+                    <!--<p><label>作品名称：</label><span>大承文化</span></p>-->
+                    <!--<p><label>作者：</label><span>何公洲</span></p>-->
+                <!--</div>-->
+                <!--<div class="cost"><i>￥230.00</i><a>马上订制</a></div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3">-->
+                <!--<img src="images/free_class/u119.png.jpg">-->
+                <!--<div class="hid" style="display: none">-->
+                    <!--<p><label>作品名称：</label><span>大承文化</span></p>-->
+                    <!--<p><label>作者：</label><span>何公洲</span></p>-->
+                <!--</div>-->
+                <!--<div class="cost"><i>￥230.00</i><a>马上订制</a></div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3">-->
+                <!--<img src="images/free_class/u119.png.jpg">-->
+                <!--<div class="hid" style="display: none">-->
+                    <!--<p><label>作品名称：</label><span>大承文化</span></p>-->
+                    <!--<p><label>作者：</label><span>何公洲</span></p>-->
+                <!--</div>-->
+                <!--<div class="cost"><i>￥230.00</i><a>马上订制</a></div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3">-->
+                <!--<img src="images/free_class/u119.png.jpg">-->
+                <!--<div class="hid" style="display: none">-->
+                    <!--<p><label>作品名称：</label><span>大承文化</span></p>-->
+                    <!--<p><label>作者：</label><span>何公洲</span></p>-->
+                <!--</div>-->
+                <!--<div class="cost"><i>￥230.00</i><a>马上订制</a></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;第二行&ndash;&gt;-->
+        <!--<div class="row box show bottom-space top-space">-->
+            <!--<div class="col-md-3">-->
+                <!--<img src="images/free_class/u119.png.jpg">-->
+                <!--<div class="hid" style="display: none">-->
+                    <!--<p><label>作品名称：</label><span>大承文化</span></p>-->
+                    <!--<p><label>作者：</label><span>何公洲</span></p>-->
+                <!--</div>-->
+                <!--<div class="cost"><i>￥230.00</i><a>马上订制</a></div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3">-->
+                <!--<img src="images/free_class/u119.png.jpg">-->
+                <!--<div class="hid" style="display: none">-->
+                    <!--<p><label>作品名称：</label><span>大承文化</span></p>-->
+                    <!--<p><label>作者：</label><span>何公洲</span></p>-->
+                <!--</div>-->
+                <!--<div class="cost"><i>￥230.00</i><a>马上订制</a></div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3">-->
+                <!--<img src="images/free_class/u119.png.jpg">-->
+                <!--<div class="hid" style="display: none">-->
+                    <!--<p><label>作品名称：</label><span>大承文化</span></p>-->
+                    <!--<p><label>作者：</label><span>何公洲</span></p>-->
+                <!--</div>-->
+                <!--<div class="cost"><i>￥230.00</i><a>马上订制</a></div>-->
+            <!--</div>-->
+            <!--<div class="col-md-3">-->
+                <!--<img src="images/free_class/u119.png.jpg">-->
+                <!--<div class="hid" style="display: none">-->
+                    <!--<p><label>作品名称：</label><span>大承文化</span></p>-->
+                    <!--<p><label>作者：</label><span>何公洲</span></p>-->
+                <!--</div>-->
+                <!--<div class="cost"><i>￥230.00</i><a class="immediately-ordered">马上订制</a></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+
+    <!--所有评论-->
+    <div class="tab work-show bottom-space">所有评论</div>
+
+    <div class="media-box box-bottom">
+        <!--<div class="thread-box">-->
+            <!--<div class="thread">-->
+                <!--<span class="thread-img">-->
+                    <!--<a class="" href="#">-->
+                    <!--<img class="media-object" src="http://q4.qlogo.cn/g?b=qq&k=yxuGm21KpLsCOtvicphr3qA&s=140&t=1417066990" alt="...">-->
+                    <!--</a>-->
+                <!--</span>-->
+                <!--<span class="thread-name">辉辉</span>-->
+            <!--</div>-->
+            <!--<div class="thread-aside">-->
+                <!--<div class="thread-main"><span class="fl"><span></span>2016-4-29       14:48:49</span><span class="fr"><span class="thread-num-first">沙发</span></span></div>-->
+                <!--<div class="thread-item">之前的产品策略就是用我们的播放器覆盖页面video区域，从TBS2.1开始会逐步放开这块的 ...</div>-->
+                <!--<div class="thread-foot"><span class="fl"><a class="thread-btn">回复</a></span><span class="fr"><a>举报</a></span></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="thread-box">-->
+            <!--<div class="thread">-->
+                <!--<span class="thread-img">-->
+                    <!--<a class="" href="#">-->
+                        <!--<img class="media-object" src="http://q4.qlogo.cn/g?b=qq&k=yxuGm21KpLsCOtvicphr3qA&s=140&t=1417066990" alt="...">-->
+                    <!--</a>-->
+                <!--</span>-->
+                <!--<span class="thread-name">辉辉</span>-->
+            <!--</div>-->
+            <!--<div class="thread-aside">-->
+                <!--<div class="thread-main"><span class="fl"><span></span>2016-4-29       14:48:49</span><span class="fr"><span class="thread-num-first">沙发</span></span></div>-->
+                <!--<div class="thread-item">之前的产品策略就是用我们的播放器覆盖页面video区域，从TBS2.1开始会逐步放开这块的 ...</div>-->
+                <!--<div class="thread-foot"><span class="fl"><a class="thread-btn">回复</a></span><span class="fr"><a>举报</a></span></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="thread-box">-->
+            <!--<div class="thread">-->
+                <!--<span class="thread-img">-->
+                    <!--<a class="" href="#">-->
+                        <!--<img class="media-object" src="http://q4.qlogo.cn/g?b=qq&k=yxuGm21KpLsCOtvicphr3qA&s=140&t=1417066990" alt="...">-->
+                    <!--</a>-->
+                <!--</span>-->
+                <!--<span class="thread-name">辉辉</span>-->
+            <!--</div>-->
+            <!--<div class="thread-aside">-->
+                <!--<div class="thread-main"><span class="fl"><span></span>2016-4-29       14:48:49</span><span class="fr"><span class="thread-num-first">沙发</span></span></div>-->
+                <!--<div class="thread-item">之前的产品策略就是用我们的播放器覆盖页面video区域，从TBS2.1开始会逐步放开这块的 ...</div>-->
+                <!--<div class="thread-foot"><span class="fl"><a class="thread-btn">回复</a></span><span class="fr"><a>举报</a></span></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="thread-box">-->
+            <!--<div class="thread">-->
+                <!--<span class="thread-img">-->
+                    <!--<a class="" href="#">-->
+                        <!--<img class="media-object" src="http://q4.qlogo.cn/g?b=qq&k=yxuGm21KpLsCOtvicphr3qA&s=140&t=1417066990" alt="...">-->
+                    <!--</a>-->
+                <!--</span>-->
+                <!--<span class="thread-name">辉辉</span>-->
+            <!--</div>-->
+            <!--<div class="thread-aside">-->
+                <!--<div class="thread-main"><span class="fl"><span></span>2016-4-29       14:48:49</span><span class="fr"><span class="thread-num-first">沙发</span></span></div>-->
+                <!--<div class="thread-item">之前的产品策略就是用我们的播放器覆盖页面video区域，从TBS2.1开始会逐步放开这块的 ...</div>-->
+                <!--<div class="thread-foot"><span class="fl"><a class="thread-btn">回复</a></span><span class="fr"><a>举报</a></span></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="thread-box">-->
+            <!--<div class="thread">-->
+                <!--<span class="thread-img">-->
+                    <!--<a class="" href="#">-->
+                        <!--<img class="media-object" src="http://q4.qlogo.cn/g?b=qq&k=yxuGm21KpLsCOtvicphr3qA&s=140&t=1417066990" alt="...">-->
+                    <!--</a>-->
+                <!--</span>-->
+                <!--<span class="thread-name">辉辉</span>-->
+            <!--</div>-->
+            <!--<div class="thread-aside">-->
+                <!--<div class="thread-main"><span class="fl"><span></span>2016-4-29       14:48:49</span><span class="fr"><span class="thread-num-first">沙发</span></span></div>-->
+                <!--<div class="thread-item">之前的产品策略就是用我们的播放器覆盖页面video区域，从TBS2.1开始会逐步放开这块的 ...</div>-->
+                <!--<div class="thread-foot"><span class="fl"><a class="thread-btn">回复</a></span><span class="fr"><a>举报</a></span></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="thread-box">-->
+            <!--<div class="thread">-->
+                <!--<span class="thread-img">-->
+                    <!--<a class="" href="#">-->
+                        <!--<img class="media-object" src="http://q4.qlogo.cn/g?b=qq&k=yxuGm21KpLsCOtvicphr3qA&s=140&t=1417066990" alt="...">-->
+                    <!--</a>-->
+                <!--</span>-->
+                <!--<span class="thread-name">辉辉</span>-->
+            <!--</div>-->
+            <!--<div class="thread-aside">-->
+                <!--<div class="thread-main"><span class="fl"><span></span>2016-4-29       14:48:49</span><span class="fr"><span class="thread-num-first">沙发</span></span></div>-->
+                <!--<div class="thread-item">之前的产品策略就是用我们的播放器覆盖页面video区域，从TBS2.1开始会逐步放开这块的 ...</div>-->
+                <!--<div class="thread-foot"><span class="fl"><a class="thread-btn">回复</a></span><span class="fr"><a>举报</a></span></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="thread-box">-->
+            <!--<div class="thread">-->
+                <!--<span class="thread-img">-->
+                    <!--<a class="" href="#">-->
+                        <!--<img class="media-object" src="http://q4.qlogo.cn/g?b=qq&k=yxuGm21KpLsCOtvicphr3qA&s=140&t=1417066990" alt="...">-->
+                    <!--</a>-->
+                <!--</span>-->
+                <!--<span class="thread-name">辉辉</span>-->
+            <!--</div>-->
+            <!--<div class="thread-aside">-->
+                <!--<div class="thread-main"><span class="fl"><span></span>2016-4-29       14:48:49</span><span class="fr"><span class="thread-num-first">沙发</span></span></div>-->
+                <!--<div class="thread-item">之前的产品策略就是用我们的播放器覆盖页面video区域，从TBS2.1开始会逐步放开这块的 ...</div>-->
+                <!--<div class="thread-foot"><span class="fl"><a class="thread-btn">回复</a></span><span class="fr"><a>举报</a></span></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--分页导航条-->
+        <div class="row">
+            <div class="col-md-12" id="page">
+                <nav>
+                    <ul class="pagination" id="pagination">
+                        <!--<li class="disabled"><a  aria-label="Previous">上一页</a></li>-->
+                        <!--<li class="active"><a>1</a></li>-->
+                        <!--<li ><a >... </a></li>-->
+                        <!--<li ><a>6</a></li>-->
+                        <!--<li ><a >7</a></li>-->
+                        <!--<li ><a >8</a></li>-->
+                        <!--<li ><a >9</a></li>-->
+                        <!--<li ><a >10</a></li>-->
+                        <!--<li ><a >... </a></li>-->
+                        <!--<li ><a >100</a></li>-->
+                        <!--<li ><a >下一页</a></li>-->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--登录发表评论-->
+        <div class="backtop-box" style="display: none">
+            <a class="reply-btn" id="comment">
+                <span class="reply-txt">评论</span>
+            </a>
+            <a class="reply-btn" href="#">
+                <span class="backtop-txt">回到顶部</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--举报部分-->
+<div class="modal fade" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">举报类型</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <label>
+                        <i class="form-input form-input-checked"></i>
+                        <span class="form-txt">违规内容（色情、欺诈、反动等）</span>
+                    </label>
+                    <label>
+                        <i class="form-input"></i>
+                        <span class="form-txt">灌水</span>
+                    </label>
+                    <label>
+                        <i class="form-input"></i>
+                        <span class="form-txt">广告骚扰</span>
+                    </label>
+                    <label>
+                        <i class="form-input"></i>
+                        <span class="form-txt">其他</span>
+                    </label>
+                </div>
+                <div id="typw_area"><div contenteditable="true">违规内容（色情、欺诈、反动等）</div></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="tip-off">举报</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--评论框-->
+<section id="editor" style="display: none">
+
+    <form>
+      <textarea id='edit' style="margin-top: 30px;">
+      </textarea>
+        <div id="editor_bottom"><a id="cancel">取消</a><a id="publish">发表</a></div>
+    </form>
+
+</section>
+
+
+
+<script>
+    $(function(){
+        $('#edit').editable({inlineMode: false, icons: {
+            bold: {type: 'font', value: 'fa fa-text-width'},
+            floatImageNone: {type: 'font', value: 'fa fa-align-center'}
+        }})
+    });
+</script>
+
+
+<!--页尾部分-->
+<footer class="_footer">
+    <div class="row">
+        <div class="col-md-12 _footer_t">合作企业</div>
+    </div>
+    <div class="row _footer_box">
+        <div class="col-md-12 _footer_b">
+            <a>网站地图</a> <a>加入我们</a> <a>企业招聘</a> <a>手机客户端</a> <a>微信客户端</a> <a>关于我们</a>
+        </div>
+        <hr>
+    </div>
+    <div class="row _footer_box2">
+        <div class="col-md-12 _footer_c">
+            <a>网站地图</a> <a>加入我们</a> <a>企业招聘</a> <a>手机客户端</a> <a>微信客户端</a> <a>关于我们</a>
+            <a>网站地图</a> <a>加入我们</a> <a>企业招聘</a> <a>手机客户端</a> <a>微信客户端</a> <a>关于我们</a>
+        </div>
+        <div class="_friendly_link">友情链接</div>
+        <hr>
+    </div>
+
+    <div class="row _footer_box2">
+        <div class="col-md-12 _footer_b">
+            <ul>
+                <li><a><img src="images/fot.png"></a></li>
+                <li><a><img src="images/fot.png"></a></li>
+                <li><a><img src="images/fot.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="row _footer_box2 _box3">
+    <a>copying北京大生支行有限公司<label>|</label>隐私声明<label>|</label>用户协议<label>|</label>京ICP证110696号&nbsp;&nbsp;&nbsp;   京ICP备11031999号&nbsp;&nbsp;&nbsp;  京公网安备11010802018414号</a><br/>
+    <a>广播电视节目制作经营许可证（京）字第05497号</a>
+</div>
+<!--页尾部分结束-->
+
+<!--以下是登录页面和注册页面-->
+<!--遮罩层-->
+<div class="sft" style="display: none">
+</div>
+<!--遮罩层结束-->
+
+<div class="container registerlogin" style="display: none">
+    <div class="_login_info">
+        <!--头部信息-->
+        <div class="_login_head">
+            <p>注册立即可享</p>
+            <p>大成文化名师在线课程免费</p>
+            <p>试听资格</p>
+        </div>
+        <!--头部结束-->
+        <div class="_login_label">
+            <label id="reginster">注册</label><label id="login">登录</label>
+        </div>
+
+        <!--注册-->
+        <div class="_b_box " >
+            <div class="_m_box">
+                <form>
+                    <table class="_login_personal">
+                        <tbody>
+                        <tr><th>手机号</th><td><input id="number" placeholder="请输入手机号"></td></tr>
+                        <tr><th>验证码</th><td><input id="check_num" placeholder="请输入验证码"><input id="get_check_num" type="button" value="获取验证码"></td></tr>
+                        <tr><th>密码</th><td><input id="password" placeholder="请输入密码"></td></tr>
+                        <tr><th></th><td><input type="checkbox" id="check" ><label>同意《网络协议》</label></td></tr>
+                        <tr><td><buttom type="submit" id="_submit_login">注册</buttom></td></tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="after_login">注册成功，可获得更多试听机会</div>
+                <div class="other_login">其他登录方式 <a><img id="qq_img" src="images/qq.png"></a><a><img src="images/weixin.png"></a><a><img src="images/xinlang.png"></a></div>
+            </div>
+        </div>
+
+        <!--登录-->
+        <div class="_b2_box" style="display: none">
+            <form>
+                <table class="_login_personal">
+                    <tbody>
+                    <tr><th>手机号</th><td><input  placeholder="请输入手机号" id="phone"></td></tr>
+                    <tr><th>密码</th><td><input  placeholder="请输入密码" id="_pass"></td></tr>
+                    <tr><th></th><td><input type="checkbox" id="_check" ><label>同意《网络协议》</label></td></tr>
+                    <tr><td><buttom type="submit" id="_login">登录</buttom></td></tr>
+                    </tbody>
+                </table>
+            </form>
+            <div class="other_login">其他登录方式 <a><img id="qq2_img" src="images/qq.png"></a><a><img src="images/weixin.png"></a><a><img src="images/xinlang.png"></a></div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+
+<script src="froala_editor/js/froala_editor.min.js"></script>
+<!--[if lt IE 9]>
+<script src="froala_editor/js/froala_editor_ie8.min.js"></script>
+<![endif]-->
+<script src="froala_editor/js/plugins/tables.min.js"></script>
+<script src="froala_editor/js/plugins/lists.min.js"></script>
+<script src="froala_editor/js/plugins/colors.min.js"></script>
+<script src="froala_editor/js/plugins/media_manager.min.js"></script>
+<script src="froala_editor/js/plugins/font_family.min.js"></script>
+<script src="froala_editor/js/plugins/font_size.min.js"></script>
+<script src="froala_editor/js/plugins/block_styles.min.js"></script>
+<script src="froala_editor/js/plugins/video.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+
+<script src="js/free_class.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

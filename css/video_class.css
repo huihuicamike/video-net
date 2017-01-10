@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height: auto;
+    background-color:#f5f4f2;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.row{
+    margin-right: 0;
+}
+._nav{
+    background-color: #E5DCCD !important;
+    padding-right: 2%;
+}
+._nab_b{
+    background-color: darkgray !important;
+    padding-right: 0;
+    border: none;
+}
+._nab_b nav{
+    border-color:#E5DCCD !important; ;
+}
+.navbar{
+    border: none;
+}
+._tap{
+    background-image: url(../images/login.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+}
+._login,._register{
+    display: inline-block;
+    padding-top: 25%;
+    margin-left: 1%;
+}
+._middle{
+    background-color: darkgray;
+    padding-top: 1%;
+    padding-bottom: 2.5%;
+}
+._video{
+    position: relative;
+    padding-left: 0;
+    height: 100%;
+}
+ ._video img{
+    width: 100%;
+     /*height: 443px;*/
+    height: 99.8%;
+}
+ ._panel{
+     height: 100%;
+     padding-right: 0;
+ }
+ ._panel a{
+     color: white;
+     display: block;
+     /*padding-top: 10% !important;*/
+     /*padding-bottom: 10% !important;*/
+     padding-left: 10%;
+     padding-right: 10%;
+     border-bottom: 1px solid darkgray;
+     text-decoration: none;
+ }
+ #_prev{
+     position: relative;
+     padding: 0;
+     text-align: center;
+     /*line-height: 50px;*/
+     color: orange;
+     font-size: 18px;
+     height: 12.5%;
+ }
+._yjt {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 20%;
+    width: 15%;
+    height: 0;
+    border-left: 14px solid orange;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-top: 14px solid transparent;
+    text-align: center;
+    line-height: 100%;
+}
+ ._mark{
+     padding: .5% 2%;
+     float: right;
+     border-radius: 5px;
+     background-color: orangered;
+     margin-left: 2%;
+     font-size: 12px;
+     margin-top: 9%;
+ }
+._panel a label{
+    font-size: 20px;
+}
+._panel a:nth-child(1),._panel a:nth-child(2),._panel a:nth-child(3),._panel a:nth-child(4),._panel a:nth-child(5){
+    background-color: grey;
+    overflow: hidden;
+}
+._panel a:nth-child(1),._panel a:nth-child(5){
+    height:12.5%;
+}
+._panel a:nth-child(2),._panel a:nth-child(3),._panel a:nth-child(4){
+    height: 25%;
+    cursor: pointer;
+}
+#click{
+    position: absolute;
+    left: 58%;
+    top: 45%;
+    padding: .5% 1%;
+    background-color: orangered;
+    margin-top: -20px;
+    margin-left: -54px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .7;
+}
+
+#click:hover{
+    opacity: 1;
+    /*动画*/
+    animation: myfirst 1s;
+    -moz-animation: myfirst 1s;	/* Firefox */
+    -webkit-animation: myfirst 1s;	/* Safari 和 Chrome */
+    -o-animation: myfirst 1s;	/* Opera */
+}
+
+@keyframes myfirst
+{
+  from {transform: rotateZ(0deg);
+         -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);
+  }
+    to{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    from {transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+    from {transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);
+    }
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    from {transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);	/* Safari 和 Chrome */
+        -moz-transform: rotateZ(360deg);
+    }
+}
+
+
+._box{
+    /*padding-left: 3%;*/
+    padding-right: 3%;
+    margin-bottom: 1.5%;
+}
+._classify{
+    margin-left: 6%;
+    margin-top: 2%;
+    background-color: white;
+    padding: 0 1.5%;
+    border: 1px solid #e7e7e7;
+    padding-top: 0 !important;
+}
+._classify label{
+    display: block;
+    padding: 6%;
+    background-color: #f5f4f2;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+._classify .row{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px #e7e7e7 dashed;
+}
+._classify .row:nth-child(4){
+    border-bottom: none !important;
+}
+._classify span{
+    display: inline-block;
+    padding: .3% 1%;
+    margin: .2% 1%;
+    color: grey;
+    position:relative;
+}
+._classify span:hover{
+    color: red;
+}
+.classify-checked{
+    background-color: red;
+    color:white !important;
+}
+.hide-radio{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+}
+.hide-radio:hover{
+    cursor:pointer;
+}
+.box-bottom{
+    width:1200px;
+    margin: auto;
+}
+
+._tag{
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 1px solid #e7e7e7;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    background-color: white;
+    margin-right: 5.2%;
+    margin-left: 5.7%;
+}
+._buy{
+    padding: 20px 60px;
+}
+._buy .col-md-4{
+    width: 224px;
+    height: 172px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    padding:0;
+    margin: 0 2%;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+}
+._buy .col-md-4:hover{
+    box-shadow: 0px 8px 20px 0 rgba(0,0,0,.3);
+    transition: box-shadow 2s ease-in-out:
+}
+._buy img{
+    height: 124px;
+    width: 100%;
+}
+._info{
+    width: 95%;
+    /*height: 130px;*/
+    padding: 5% 4%;
+    background-color: white;
+    position: relative;
+}
+._info label{
+    margin-bottom: 2%;
+}
+._stu,._num{
+    display: inline-block;
+    margin: 5% 0;
+    display: inline-block;
+}
+._num{
+    float: right;
+}
+
+._middle ._row{
+    height: 443px;
+}
+._middle ._row .row{
+    height: 100%;
+}
+._info a{
+    display: inline-block;
+    padding: 2% 2%;
+    background-color: orange;
+    border-radius: 5px;
+    float: right !important;
+    /*margin: 2% 0;*/
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    margin-right: 4%;
+    font-size: 13px;
+}
+._info a:hover{
+    opacity: .9;
+}
+._box_class{
+    margin-bottom: 7%;
+}
+
+
+
+#_bottom_class a{
+    display: inline-block;
+}
+#_bottom_class ._up,#_bottom_class ._down{
+    display: inline-block;
+   width: 20px !important;
+    height: 20px !important;
+  /*margin: 0 20%;*/
+}
+#_bottom_class button{
+    display: inline-block;
+    margin: 9% 5%;
+    padding: 0 8%;
+    background-color: dimgray;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    z-index: 2000;
+}
+#_bottom_class button:hover{
+    opacity: .8;
+}
+#_bottom_class button:nth-child(1){
+    float: left;
+}
+#_bottom_class button:nth-child(2){
+    float: right;
+}
+._teacher{
+    padding: 20px;
+    width: 23.5%;
+    /*position: absolute;*/
+    /*right: 6%;*/
+    bottom: 0;
+}
+._teacher label{
+    display: block;
+    padding: 5px 7% 1%;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+}
+._teacher_img img{
+    width: 100%;
+    /*height: 150px;*/
+}
+._teacher_intro{
+    display: inline-block;
+    height: 135px;
+    padding: 0;
+}
+._teacher_intro ._first{
+    height: 80%;
+    width: 100%;
+    border: 1px solid grey;
+    margin-left: 4%;
+}
+._teacher_intro ._second{
+    display: block;
+    margin-top: 5% !important;
+    margin-left: 9%;
+    border-radius: 5px;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 70%;
+    margin: auto;
+}
+._teacher_intro ._second:hover{
+    opacity: .9;
+}
+._first span{
+    display: block;
+    margin: 3% 5%;
+}
+._teacher_info{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left:5% ;
+    padding-right:5%;
+    font-size: 12px;
+}
+#teacher{
+    position: relative;
+}
+#related{
+    margin-top:50px;
+    width: 100%;
+}
+#page{
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+._teacher_border{
+    border: 1px solid gainsboro;
+    padding-bottom: 3%;
+}
+hr{
+    height:1px;
+    border:none;
+    border-top:1px dashed gray;
+    width: 90%;
+    margin: 2% 5%;
+}
+._user_head{
+    display: block;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+._tab{
+    margin-top: 8%;
+}
+._panel label{
+    display: inline-block;
+    margin-top: 8%;
+}
+._price{
+    /*position: absolute;*/
+    display: inline-block;
+    left: 2%;
+    margin: 4% 0;
+    /*bottom: 5%;*/
+    color: orange;
+}
+._price + a{
+    right: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+h6{
+    color: red;
+}
+
+
+.navbar-nav > li > a{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.footer{
+    text-align: center;
+}
+
+
+/*点击登录框出现的遮罩层*/
+.sft{
+    position: absolute;
+    height: 200vh;
+    /*vh:100%*/
+    width: 100%;
+    z-index:3000;
+    background-color: black;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+}
+#change{
+    position: relative;
+}
+.bottom-course{
+    position: absolute;
+    padding: 0 20px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    /*color: #93999f;*/
+    font-size: 14px;
+    line-height: 36px;
+    left: 0;
+}
+.bottom-course a{
+    right: 20px;
+    position: absolute;
+    padding: 0.5px 5px;
+    background-color: red;
+    display: inline-block;
+    height: 23px;
+    top: 8px;
+    text-align: center;
+    line-height: 23px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.bottom-course a:hover{
+   transform:scale(.9);
+}
+.hid{
+    position: absolute;
+    padding: 0 20px;
+    transition: top .5s;
+    top: 122px;
+    height: 144px;
+    width: 100%;
+    color:#93999f;
+    opacity: .98;
+    background-image: url(../images/video/bg-course.png);
+}
+.hid p{
+    padding-top:13px;
+    margin:0;
+}
+.hid p label{
+    margin: 0;
+}
+.related-talk:hover,.related-class:hover{
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+    transform: scale(.9);
+}

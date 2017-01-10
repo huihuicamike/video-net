@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+body,html{
+    width: 100%;
+    height: auto;
+    background-color:#f5f4f2;
+    font-size: 14px !important;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+._nav{
+    background-color: #E5DCCD !important;
+}
+._nav a{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+._nab_b{
+    background-color: #E5DCCD !important;
+}
+._nab_b nav{
+    margin-bottom:0!important;
+}
+._tap{
+    background-image: url(../images/login.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+}
+._login,._register{
+    display: inline-block;
+    padding-top: 25%;
+    margin-left: 1%;
+}
+.tab {
+    margin: 50px 5% 50px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.tab span{
+    padding:0 10px;
+}
+.box{
+    margin: 20px 15% 0;
+    background-color: white;
+}
+.bg-color{
+    background-color:#f5f5f5;
+}
+.guide{
+    padding: 30px 80px;
+}
+.guide div{
+    font-size: 14px;
+    padding:10px 20px;
+    text-align: center;
+    margin:40px 0;
+    border-radius:3px;
+}
+.guide div label{
+    margin-bottom: 0 !important;
+}
+.works{
+    padding: 40px 50px 20px 0;
+    width: 64.8%;
+}
+.works span{
+    display: inline-block;
+}
+.works div{
+    padding:30px 0;
+}
+.works div label,.works div span{
+    padding: 0;
+}
+.at-once{
+    padding: 40px 60px;
+    margin-top:0 !important;
+}
+.at-once >div{
+    padding:30px 20px;
+}
+.at-once >div div{
+    margin:15px;
+}
+.at-once >div div:last-child{
+   text-align: center;
+}
+.at-once a{
+    display: inline-block;
+    background-color:gray;
+    padding:5px 10px;
+    border-radius:5px;
+    color: white;
+}
+.recent-activities{
+    margin-top: 0 !important;
+    margin-bottom: 50px;
+}
+.recent-activities div{
+    border-radius:2px;
+}
+.recent-activities div{
+    margin:40px 60px;
+    font-size: 16px;
+    padding:5px;
+    width: 20%;
+    text-align: center;
+}
+.recent-activities a{
+    display: block;
+    margin:20px 60px;
+    padding:8px 5px;
+}
+.recent-activities a label{
+    margin-bottom: 0;
+}
+.recent-activities a label:last-child{
+    text-align: center;
+}
+
+
+/*页尾部分*/
+._footer_t{
+    height:200px;
+    background-color: gainsboro;
+    font-size: 25px;
+    text-align: center;
+    /*padding-top: 3%;*/
+    padding: 5% 5%;
+}
+._footer_box,._footer_box2{
+    /*height: 500px;*/
+    background-color: #333;
+    color: white;
+    padding: 1% 12% !important;
+    padding-bottom: 0 !important;
+    /*border-bottom: 1px solid white;*/
+}
+._footer_box2{
+    padding: 0.5% 7% !important;
+    padding-top:0 !important;
+    /*text-align: center;*/
+}
+._footer_b{
+    padding: 2% 10% !important;
+    margin-bottom: 1% !important;
+    /*border-bottom: 1px solid white;*/
+}
+._footer_c{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+._footer_c a{
+    display:inline-block;
+    /*background-color: red;*/
+    margin: 1%  4% !important;
+    /*border: 1px solid white;*/
+}
+._footer_b a{
+    /*background-color: red;*/
+    margin: 0  5.4% !important;
+    color: white;
+    text-decoration:none !important;
+    cursor:pointer;
+    /*padding: 5% 7%;*/
+}
+.hr{
+    color: white !important;
+    height: 1px;
+}
+._footer a:hover{
+    color: white;
+}
+._footer_nav{
+    background-color: black;
+    height: 100px;
+    opacity: 0.7;
+}
+._footer_nav input,._footer_nav a{
+    margin-right: 2%;
+    top: 50%;
+    margin-top: -10px;
+    background-color: white;
+    border: none;
+    line-height: 2em;
+    border-radius: 4px;
+    text-align: center;
+    height: 2em;
+}
+._footer_nav a{
+    cursor: pointer;
+    text-decoration: none !important;
+}
+._login_access{
+    background-color: orange !important;
+    color: black !important;
+}
+._login_access:hover{
+    opacity: 0.8;
+}
+a:active{
+    outline: none !important;
+}
+._footer_box2{
+    position: relative;
+}
+._footer_box2 ._linked{
+    margin-bottom: 3%;
+}
+._footer_box2 ul{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-left: 20%;
+    /*position:absolute;*/
+    /*left: 20%;*/
+    /*margin-left: 50%;*/
+}
+._footer_box2 ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+._footer_box2 ul li{
+    display: inline-block;
+    margin-left:5%;
+    margin-right: 5%;
+}
+._footer_box2 a{
+    text-align: center;
+    margin-top: 1%;
+    text-decoration: none !important;
+    cursor: pointer;
+    margin-bottom: 1%;
+    color: white;
+    /*display: block;*/
+}
+._footer_box2 a label{
+    display: inline-block;
+    margin: 0 1%;
+}
+._box3{
+    text-align: center;
+    padding-bottom: 3% !important;
+}
+/*友情链接*/
+._friendly_link{
+    display: block;
+    width: 5%;
+    height: 20px;
+    position: absolute;
+    top:-10px;
+    left: 50%;
+    margin-left: -2.25%;
+    background-color: #333;
+    text-align: center;
+}
